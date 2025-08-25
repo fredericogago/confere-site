@@ -395,3 +395,332 @@ a.btn, .btn{ outline-offset:2px; }
 /* Pequenas melhorias de espaçamento por baixo da grelha */
 #servicesList + .empty-state--rich{ margin-top: 1rem; }
 
+/* DETALHES --------------------------------------------------- */
+details{
+  border:1px solid var(--border);
+  border-radius:12px;
+  background: var(--card);
+}
+
+/* Botão "Saber mais" com look suave */
+.svc-summary{
+  appearance:none;
+  cursor:pointer;
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.55rem .8rem;
+  font-weight:600;
+  border-radius:999px;
+  border:1px solid color-mix(in lab, var(--brand) 26%, var(--border));
+  background:
+    linear-gradient(180deg, color-mix(in lab, var(--brand) 8%, transparent), transparent 65%),
+    var(--card);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease;
+}
+
+.svc-summary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(2,6,23,.08);
+  border-color: color-mix(in lab, var(--brand) 36%, var(--border));
+}
+
+.svc-summary:focus-visible{
+  outline: 2px solid color-mix(in lab, var(--brand) 55%, transparent);
+  outline-offset: 2px;
+}
+
+/* Remove o marcador nativo */
+details > summary::-webkit-details-marker{ display:none; }
+
+/* Ícone “chevron” que roda quando abre */
+.svc-summary .chev{
+  width: 18px; height: 18px;
+  display:grid; place-items:center;
+  transition: transform .18s ease;
+  transform-origin: 50% 55%;
+  opacity:.9;
+}
+
+/* Troca de rótulo e rotação do ícone ao abrir */
+details[open] .svc-summary .when-closed{ display:none; }
+details:not([open]) .svc-summary .when-open{ display:none; }
+details[open] .svc-summary .chev{ transform: rotate(180deg); }
+
+/* Área de conteúdo dos detalhes */
+details > div{ padding:.75rem .9rem; border-top:1px solid var(--border); }
+
+/* Título dentro das secções internas */
+.svc-sec-title{ margin:.2rem 0 .35rem; font-size:1rem; }
+
+/* FAQ dentro do serviço (mantido) */
+.svc-faq .faq-item{ border:1px dashed var(--border); border-radius:10px; margin:.45rem 0 0; }
+.svc-faq .faq-item > summary{ padding:.55rem .7rem; font-weight:600; }
+.svc-faq .faq-item .answer{ padding:.6rem .75rem; color: var(--muted); }
+
+/* === DETALHES — versão leve, sem sombras ==================== */
+
+/* Sem moldura no container; deixamos só o divisor do conteúdo */
+details{
+  border: 0;
+  background: transparent;
+}
+
+/* Botão-texto "Saber mais": leve, sem sombra */
+.svc-summary{
+  appearance: none;
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .25rem .1rem;          /* como link com um pouco de “hit area” */
+  font-weight: 600;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  /* Garantir que nada herda sombras/transforms antigos */
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Remover o marcador nativo */
+details > summary::-webkit-details-marker{ display: none; }
+
+/* Estado hover: sublinhado suave e leve véu de fundo (muito subtil) */
+.svc-summary:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  background: color-mix(in lab, var(--brand) 6%, transparent);
+}
+
+/* Foco acessível */
+.svc-summary:focus-visible{
+  outline: 2px solid color-mix(in lab, var(--brand) 55%, transparent);
+  outline-offset: 2px;
+}
+
+/* Ícone chevron discreto que roda ao abrir */
+.svc-summary .chev{
+  width: 16px; height: 16px;
+  display: grid; place-items: center;
+  opacity: .7;
+  transform-origin: 50% 55%;
+  transition: transform .18s ease;
+}
+details[open] .svc-summary .chev{ transform: rotate(180deg); }
+
+/* Troca de rótulos “Saber mais / Mostrar menos” */
+details[open] .svc-summary .when-closed{ display: none; }
+details:not([open]) .svc-summary .when-open{ display: none; }
+
+/* Conteúdo dos detalhes: só um divisor em cima, alinhado com cartões */
+details > div{
+  padding: .75rem 0 0;            /* sem preenchimento lateral para “entrar” no cartão */
+  margin-top: .35rem;
+  border-top: 1px solid var(--border);
+  background: transparent;
+  border-radius: 0;
+}
+
+/* Títulos internos mantidos */
+.svc-sec-title{ margin: .2rem 0 .35rem; font-size: 1rem; }
+
+/* FAQ dentro do serviço – também sem sombras */
+.svc-faq .faq-item{ border:1px dashed var(--border); border-radius:10px; margin:.45rem 0 0; }
+.svc-faq .faq-item > summary{ padding:.55rem .7rem; font-weight:600; }
+.svc-faq .faq-item .answer{ padding:.6rem .75rem; color: var(--muted); }
+/* === "Saber mais" — ghost pill clean ======================= */
+
+
+details{
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+/* botão suave, consistente com o resto do UI */
+.svc-summary{
+  appearance:none;
+  cursor:pointer;
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.48rem .78rem;
+  font-weight:600;
+  line-height:1;
+  border-radius:999px;
+  border:1px solid color-mix(in lab, var(--brand) 22%, var(--border));
+  background:
+    linear-gradient(180deg, color-mix(in lab, var(--brand) 6%, transparent), transparent 65%),
+    var(--card);
+  transition: border-color .16s ease, background .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+
+.svc-summary:hover{
+  border-color: color-mix(in lab, var(--brand) 35%, var(--border));
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(2,6,23,.06);
+}
+
+.svc-summary:focus-visible{
+  outline:2px solid color-mix(in lab, var(--brand) 55%, transparent);
+  outline-offset:2px;
+}
+
+/* seta → discreta, sem rotação; só desliza no hover */
+.svc-summary .arr{
+  font-size:1rem;
+  opacity:.75;
+  transform: translateX(0);
+  transition: transform .16s ease, opacity .16s ease;
+}
+.svc-summary:hover .arr{
+  transform: translateX(3px);
+  opacity:1;
+}
+
+/* troca de rótulo (sem mexer na seta) */
+details[open] .svc-summary .when-closed{ display:none; }
+details:not([open]) .svc-summary .when-open{ display:none; }
+
+/* conteúdo interno dos detalhes */
+details > div{
+  padding:.75rem .9rem;
+  border-top:1px solid var(--border);
+}
+
+/* título das subsecções */
+.svc-sec-title{ margin:.2rem 0 .35rem; font-size:1rem; }
+/* === SABER MAIS — versão premium =================================== */
+details {
+  border: 0;
+  background: transparent;
+}
+
+.svc-summary{
+  appearance:none;
+  cursor:pointer;
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.6rem .95rem;
+  font-weight:600;
+  line-height:1;
+  border-radius:999px;
+  border:1px solid color-mix(in lab, var(--brand) 26%, var(--border));
+  background:
+    linear-gradient(180deg, color-mix(in lab, var(--brand) 8%, transparent), transparent 65%),
+    var(--card);
+  box-shadow: 0 6px 18px rgba(2,6,23,.06);
+  transition:
+    transform .14s ease,
+    box-shadow .18s ease,
+    border-color .18s ease,
+    background .18s ease;
+}
+
+.svc-summary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(2,6,23,.10);
+  border-color: color-mix(in lab, var(--brand) 36%, var(--border));
+}
+
+.svc-summary:active{
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(2,6,23,.08);
+}
+
+.svc-summary:focus-visible{
+  outline: 3px solid color-mix(in lab, var(--brand) 55%, transparent);
+  outline-offset: 2px;
+}
+
+/* Rótulos dinâmicos */
+details[open] .svc-summary .when-closed{ display:none; }
+details:not([open]) .svc-summary .when-open{ display:none; }
+
+/* Chevron em SVG (sem “triângulo feio”) */
+.svc-summary .chev{
+  width:18px; height:18px; display:grid; place-items:center;
+  opacity:.9; transform-origin:50% 55%;
+  transition: transform .2s ease;
+}
+details[open] .svc-summary .chev{ transform: rotate(180deg); }
+
+/* Conteúdo com divisor suave */
+details > div{
+  padding:.8rem 0 0;
+  margin-top:.45rem;
+  border-top:1px solid var(--border);
+}
+
+/* Respeitar utilizadores com reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .svc-summary,
+  .svc-summary .chev{ transition: none; }
+}
+
+/* === Saber mais — chevron final ============================= */
+details{
+  border: 0;
+  background: transparent;
+}
+
+.svc-summary{
+  appearance:none;
+  cursor:pointer;
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  padding:.6rem .95rem;
+  font-weight:600;
+  line-height:1;
+  border-radius:999px;
+  border:1px solid color-mix(in lab, var(--brand) 26%, var(--border));
+  background:
+    linear-gradient(180deg, color-mix(in lab, var(--brand) 8%, transparent), transparent 65%),
+    var(--card);
+  box-shadow: 0 6px 18px rgba(2,6,23,.06);
+  transition: transform .14s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+.svc-summary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(2,6,23,.10);
+  border-color: color-mix(in lab, var(--brand) 36%, var(--border));
+}
+.svc-summary:active{ transform:none; box-shadow: 0 4px 12px rgba(2,6,23,.08); }
+.svc-summary:focus-visible{
+  outline: 3px solid color-mix(in lab, var(--brand) 55%, transparent);
+  outline-offset: 2px;
+}
+
+/* rótulos dinâmicos */
+details[open] .svc-summary .when-closed{ display:none; }
+details:not([open]) .svc-summary .when-open{ display:none; }
+
+/* chevron SVG com rotação */
+.svc-summary .chev{
+  width:18px; height:18px;
+  display:grid !important;         /* força mostrar, caso alguma regra antiga exista */
+  place-items:center;
+  opacity:.9;
+  transform-origin:50% 55%;
+  transition: transform .2s ease;
+}
+details[open] .svc-summary .chev{ transform: rotate(180deg); }
+
+/* conteúdo */
+details > div{
+  padding:.8rem 0 0;
+  margin-top:.45rem;
+  border-top:1px solid var(--border);
+}
+@media (prefers-reduced-motion: reduce){
+  .svc-summary, .svc-summary .chev{ transition:none; }
+}

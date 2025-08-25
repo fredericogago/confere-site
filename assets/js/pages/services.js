@@ -142,10 +142,26 @@
         svc.tags.slice(0, 4).forEach(t => tagsWrap.append(el('span', { class:'tag', text:String(t) })));
       }
 
-      // details (saber mais)
-      const det = el('details');
-      const sumDet = el('summary', { text:'Saber mais' });
-      det.append(sumDet);
+ const det = el('details');
+
+// "Saber mais" com rótulos dinâmicos e chevron
+const sumDet = el('summary', { class:'svc-summary' }, [
+  el('span', { class:'when-closed', text:'Saber mais' }),
+  el('span', { class:'when-open',  text:'Mostrar menos' }),
+    el('span', {
+    class: 'chev',
+    'aria-hidden': 'true',
+    html: `
+      <svg viewBox="0 0 24 24" width="18" height="18" role="img" aria-hidden="true">
+        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    `
+  })
+]);
+
+det.append(sumDet);
+
 
       const detWrap = el('div');
 
