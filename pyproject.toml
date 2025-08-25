@@ -1,0 +1,7 @@
+[project]
+name = "confere-site"
+version = "0.1.0"
+description = "A static site generator for Confere"
+authors = [{ name = "Frederico Gago", email = "fredericogago@confere.pt" }]
+requires-python = ">=3.13"
+dependencies = []

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Serviços — Confere</title>
+  <meta name="description" content="Contabilidade, RH e consultoria orientadas a processos e tecnologia. Serviços claros, resultados práticos.">
+  <link rel="canonical" href="https://www.confere.pt/servicos.html"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="theme-color" content="#fdfcfb"/>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Confere">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Serviços — Confere">
+  <meta property="og:description" content="Serviços com impacto: contabilidade, payroll e automação de processos.">
+  <meta property="og:url" content="https://www.confere.pt/servicos.html">
+  <meta property="og:image" content="https://www.confere.pt/assets/images/hero/pages/services-1200.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="800">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Confere",
+    "url":"https://www.confere.pt",
+    "logo":"https://www.confere.pt/assets/images/logotipo/light/logo-320.webp",
+    "sameAs":["https://www.linkedin.com/company/confere-silva-sabino-lda"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload"
+        as="image"
+        href="assets/images/hero/pages/services-1200.jpg"
+        imagesrcset="assets/images/hero/pages/services-800.jpg 800w,
+                     assets/images/hero/pages/services-1200.jpg 1200w,
+                     assets/images/hero/pages/services-1600.jpg 1600w"
+        imagesizes="(max-width: 960px) 100vw, 50vw">
+
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="stylesheet" href="assets/css/pages/services.css"/>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand-logo" href="index.html" aria-label="Confere">
+      <img id="brand-logo" width="320" height="128" alt="Confere"
+           data-light-src="assets/images/logotipo/light/logo-320.webp"
+           data-light-srcset="assets/images/logotipo/light/logo-200.webp 200w, assets/images/logotipo/light/logo-320.webp 320w, assets/images/logotipo/light/logo-440.webp 440w"
+           data-dark-src="assets/images/logotipo/dark/logo-320.webp"
+           data-dark-srcset="assets/images/logotipo/dark/logo-200.webp 200w, assets/images/logotipo/dark/logo-320.webp 320w, assets/images/logotipo/dark/logo-440.webp 440w"/>
+    </a>
+    <div class="menu">
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuLinks">☰ <span class="sr-only">Abrir menu</span></button>
+      <nav class="menu-links" id="menuLinks">
+        <a href="servicos.html" aria-current="page">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="index.html#equipa">Equipa</a>
+        <a href="carreiras.html">Carreiras</a>
+        <a href="index.html#contactos">Contactos</a>
+      </nav>
+      <button id="theme-toggle" class="icon-btn theme-toggle" type="button" title="Trocar tema">🖥️</button>
+    </div>
+  </div>
+</header>
+
+<main class="hero hero--services">
+  <div class="container">
+    <div class="grid grid-2">
+      <div>
+        <div class="eyebrow">O que fazemos</div>
+        <h1>Serviços com impacto. <br/>Resultados que se sentem no dia-a-dia.</h1>
+        <p class="section-lead">
+          Contabilidade, RH e consultoria orientadas a <em>processos</em> e <em>tecnologia</em>.
+          Clareza no escopo, previsibilidade na execução e dados que ajudam a decidir.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="index.html#contactos">Falar connosco</a>
+        </div>
+      </div>
+
+      <figure class="hero-media shadow">
+        <picture>
+          <source type="image/webp"
+                  srcset="assets/images/hero/pages/services-800.webp 800w,
+                          assets/images/hero/pages/services-1200.webp 1200w,
+                          assets/images/hero/pages/services-1600.webp 1600w">
+          <img src="assets/images/hero/pages/services-1200.jpg"
+               srcset="assets/images/hero/pages/services-800.jpg 800w,
+                       assets/images/hero/pages/services-1200.jpg 1200w,
+                       assets/images/hero/pages/services-1600.jpg 1600w"
+               sizes="(max-width: 960px) 100vw, 50vw"
+               alt="Equipa a trabalhar com ERP e relatórios"
+               decoding="async" fetchpriority="high">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</main>
+
+<!-- PESQUISA -->
+<section aria-labelledby="pesquisa-title">
+  <div class="container">
+    <h2 id="pesquisa-title" class="sr-only">Pesquisar serviços</h2>
+    <form id="servicesSearchForm" class="svc-search" role="search">
+      <input id="servicesSearch" type="search" placeholder="Pesquisar serviços (ex.: contabilidade, payroll, integrações)" aria-label="Pesquisar serviços">
+      <div class="svc-filters" id="servicesFilters" aria-label="Categorias"></div>
+    </form>
+  </div>
+</section>
+
+<section aria-labelledby="servicos-title">
+  <div class="container">
+    <h2 id="servicos-title">Serviços</h2>
+    <div id="servicesList" class="services-grid" role="list"></div>
+    <p id="servicesEmpty" class="muted mt-06" hidden>Nenhum serviço corresponde à pesquisa.</p>
+          <aside class="services-callout mt-06" aria-label="Pedido personalizado">
+      <div class="callout-ico" aria-hidden="true">💡</div>
+      <p>
+        Não encontra exatamente o que procura? <a href="index.html#contactos">Contacte-nos</a> e analisamos o seu caso.
+      </p>
+    </aside>
+  </div>
+</section>
+
+<section aria-labelledby="metodo-title" id="metodo">
+  <div class="container">
+    <h2 id="metodo-title">Como trabalhamos</h2>
+    <p class="section-lead method-intro">
+      Plano simples, calendário claro e checkpoints regulares. Menos fricção, mais previsibilidade.
+    </p>
+
+    <!-- Passos -->
+    <div class="process-steps">
+      <article class="m-step">
+        <div class="m-ico">🧭</div>
+        <h3>Diagnóstico</h3>
+        <p>Levantamos processos, datas-chave e riscos. Alinhamos objetivos.</p>
+      </article>
+      <article class="m-step">
+        <div class="m-ico">🗓️</div>
+        <h3>Plano & calendário</h3>
+        <p>Definimos escopo, responsáveis e um calendário realista.</p>
+      </article>
+      <article class="m-step">
+        <div class="m-ico">🔐</div>
+        <h3>Onboarding</h3>
+        <p>Acessos, integrações e documentação. Tudo pronto para arrancar.</p>
+      </article>
+      <article class="m-step">
+        <div class="m-ico">⚙️</div>
+        <h3>Execução</h3>
+        <p>Rotinas mensais com checklists e controlo de qualidade.</p>
+      </article>
+      <article class="m-step">
+        <div class="m-ico">📊</div>
+        <h3>Reporting</h3>
+        <p>KPIs e mapas obrigatórios — só o essencial para decidir.</p>
+      </article>
+      <article class="m-step">
+        <div class="m-ico">🚀</div>
+        <h3>Melhoria contínua</h3>
+        <p>Otimizações em sprints curtos, sem paralisar a operação.</p>
+      </article>
+    </div>
+
+    <!-- Divisor entre passos e garantias -->
+    <div class="sec-divider" role="separator" aria-label="Garantias e boas práticas">
+      <span>Garantias & boas práticas</span>
+    </div>
+
+    <!-- Garantias -->
+    <div class="value-grid">
+      <article class="value-card">
+        <div class="v-ico">⏱️</div>
+        <h3>Comunicação</h3>
+        <p class="muted">Ponto de contacto dedicado e atualizações regulares.</p>
+        <ul class="ticks">
+          <li>Calendário partilhado</li>
+          <li>Ticketing simples (email)</li>
+          <li>Resumo mensal</li>
+        </ul>
+      </article>
+      <article class="value-card">
+        <div class="v-ico">🛡️</div>
+        <h3>Privacidade & RGPD</h3>
+        <p class="muted">Acesso mínimo necessário e registos de quem faz o quê.</p>
+        <ul class="ticks">
+          <li>Privacy by default</li>
+          <li>Gestão de acessos e logs</li>
+          <li>Partilha segura de documentos</li>
+        </ul>
+      </article>
+      <article class="value-card">
+        <div class="v-ico">✅</div>
+        <h3>Qualidade</h3>
+        <p class="muted">Dupla verificação em fechos e obrigações fiscais/laborais.</p>
+        <ul class="ticks">
+          <li>Checklists por etapa</li>
+          <li>Revisão por pares</li>
+          <li>Post-mortems leves</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- CTA -->
+    <div class="method-cta">
+      <div class="cta-copy">
+        <h3>Quer pôr a casa em ordem?</h3>
+        <p class="muted">Começamos com um diagnóstico rápido e um plano em 3 passos.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="index.html#contactos">Agendar diagnóstico</a>
+        <a class="btn btn-secondary" href="#servicos-title">Ver serviços</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Confere. Todos os direitos reservados.</div>
+    <div class="footer-links">
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html" aria-current="page">Serviços</a>
+      <a href="carreiras.html">Carreiras</a>
+      <a href="index.html#contactos">Contactos</a>
+    </div>
+  </div>
+      <div class="container footer-legal">
+    <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer">Livro de Reclamações</a>
+    <span class="dot">·</span>
+    <a href="https://www.centroarbitragemlisboa.pt/" target="_blank" rel="noopener noreferrer">Centro de Arbitragem de Conflitos de Consumo de Lisboa</a>
+    <span class="dot">·</span>
+    <a href="https://www.linkedin.com/company/confere-silva-sabino-lda" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages/services.js"></script>
+</body>
+</html>

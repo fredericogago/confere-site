@@ -1,0 +1,117 @@
+# Serviços da Confere (PT)
+services:
+  - title: "Contabilidade"
+    icon: "📊"
+    category: "Contabilidade"
+    summary: "Fecho anual, reconciliações e obrigações fiscais — previsível e sem sobressaltos."
+    highlights: ["Fecho atempado", "Reconciliações", "IVA/IES", "Reporting útil"]
+    bullets:
+      - "Reconcilizações bancárias e de terceiros"
+      - "Mapas fiscais (IVA, retenções, IES)"
+      - "Fecho mensal com checklists"
+      - "KPIs e reporting focado na decisão"
+    outcomes:
+      - "Cumprimento fiscal consistente"
+      - "Dados certos à primeira"
+    deliverables:
+      - "Dossier mensal com mapas e reconciliações"
+      - "Relatório de fecho resumido"
+    obligations:
+      - "IVA"
+      - "IES"
+      - "Declarações de retenções na fonte"
+    documents_required:
+      - "Faturas de vendas/compras"
+      - "Extratos bancários"
+      - "Recibos e documentos de suporte"
+    onboarding_steps:
+      - "Diagnóstico e calendarização"
+      - "Configuração de planos e acessos"
+      - "Arranque assistido (1.º fecho acompanhado)"
+    for: ["PME", "Serviços profissionais", "E-commerce"]
+    tags: ["contabilidade", "iva", "fecho", "reconciliações", "reporting"]
+    featured: true
+    show_on_home: true
+    faq:
+      - q: "Trabalham com SAF-T (PT) e ATCUD?"
+        a: "Sim. Validamos e tratamos o SAF-T (PT) da contabilidade e ajudamos a garantir a numeração/ATCUD nas faturas, em conformidade com as regras em vigor."
+      - q: "Conseguem migrar do meu software atual?"
+        a: "Sim. Após diagnóstico, mapeamos contas e terceiros, importamos saldos/SAF-T e corremos um fecho piloto para validar reconciliações."
+      - q: "Fazem o dossier fiscal e apoio a auditorias?"
+        a: "Preparamos dossier mensal/anual, disponibilizamos evidências e acompanhamos pedidos de auditoria/AT."
+      - q: "Podem apoiar a faturação eletrónica para entidades públicas?"
+        a: "Sim. Ajudamos a cumprir o CIUS-PT e os requisitos da faturação eletrónica no setor público (emissão/receção)."
+      - q: "Como partilhamos documentos?"
+        a: "Preferencialmente via canais digitais (portais/drive segura). Também aceitamos digitalização organizada por pastas e periodicidade combinada."
+    cta_label: "Pedir proposta"
+    cta_url: "index.html#contactos"
+
+  - title: "Payroll & RH"
+    icon: "🧾"
+    category: "Recursos Humanos"
+    summary: "Processamento salarial, admissões/cessações e obrigações — simples e pontual."
+    highlights: ["Processamento mensal", "SS e AT", "Admissões/Cessações"]
+    bullets:
+      - "Recibos e processamento mensal"
+      - "Gestão de admissões/cessações"
+      - "Declarações SS/AT e mapas legais"
+    outcomes:
+      - "Conformidade laboral e fiscal"
+      - "Colaboradores informados e sem surpresas"
+    deliverables:
+      - "Recibos e mapas de processamento"
+      - "Declarações submetidas (AT/SS)"
+    obligations: ["Segurança Social", "AT", "FCT/FGCT"]
+    documents_required: ["Contratos", "Mapas de tempos", "Alterações salariais"]
+    onboarding_steps: ["Levantamento de dados", "Parametrização", "1.º ciclo assistido"]
+    for: ["PME", "Startups", "Retalho e restauração"]
+    tags: ["payroll", "rh", "segurança social", "contratos"]
+    featured: true
+    show_on_home: true
+    faq:
+      - q: "Tratam as comunicações obrigatórias (AT/SS)?"
+        a: "Sim. Submetemos as declarações mensais aplicáveis (ex.: DMR na AT) e as comunicações legais de remunerações."
+      - q: "Integram ponto e benefícios?"
+        a: "Sim. Importamos mapas de tempos e configuramos rubricas (subsídios, ajudas de custo, isenções) de acordo com a política interna."
+      - q: "Apoiam admissões, alterações e cessações?"
+        a: "Cuidamos da documentação, parametrização e das comunicações legais aplicáveis, com checklist por evento."
+      - q: "Como garantem a confidencialidade dos dados?"
+        a: "Acesso mínimo necessário, registo de operações e partilha segura. Seguimos práticas alinhadas com o RGPD."
+      - q: "Conseguem um arranque rápido a meio do ano?"
+        a: "Sim. Fazemos reconciliação de histórico, conferimos pendentes e iniciamos com um ciclo assistido para estabilidade."
+    cta_label: "Pedir proposta"
+    cta_url: "index.html#contactos"
+
+  - title: "Consultoria de Processos & Automação"
+    icon: "⚙️"
+    category: "Consultoria"
+    summary: "Mapeamento, otimização e automação."
+    highlights: ["Diagnóstico", "Automatizações", "Integrações"]
+    bullets:
+      - "Levantamento de processos e riscos"
+      - "Automatização de rotinas e reconciliações"
+      - "Integrações com faturação, bancos e CRMs"
+    outcomes:
+      - "Menos repetição e erro"
+      - "Ciclos mais rápidos e previsíveis"
+    deliverables:
+      - "Roadmap de melhorias"
+      - "Sprints com entregáveis testados"
+    obligations: []
+    documents_required: ["Acesso a dados e fluxos atuais", "Exemplos de ficheiros"]
+    onboarding_steps: ["Workshop discovery", "Roadmap", "Execução faseada"]
+    for: ["Organizações em crescimento", "PME em transformação digital"]
+    tags: ["consultoria", "processos", "primavera", "integrações", "automação"]
+    featured: true
+    show_on_home: false
+    faq:
+      - q: "Podemos começar com um piloto?"
+        a: "Sim. Normalmente 2–3 sprints focados em ganhos rápidos, antes de escalar."
+      - q: "Trabalham no nosso ERP e ecossistema atual?"
+        a: "Sim. Atuamos no vosso ERP e sistemas adjacentes, evitando mudanças disruptivas sempre que possível."
+      - q: "Automatizam reconciliações e rotinas fiscais?"
+        a: "Sim. Desenhamos fluxos que reduzem tarefas manuais (ex.: reconciliações) e melhoram a preparação de mapas e ficheiros normalizados."
+      - q: "Garantem transferência de conhecimento?"
+        a: "Sim. Toda a solução é documentada e a equipa recebe formação prática para autonomia."
+    cta_label: "Pedir proposta"
+    cta_url: "index.html#contactos"

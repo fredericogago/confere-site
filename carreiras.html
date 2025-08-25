@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <!-- 1) Básico -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Carreiras — Confere</title>
+  <meta name="description" content="Vagas em aberto e candidatura espontânea na Confere. Equipas pequenas, mentoria e formação."/>
+  <link rel="canonical" href="https://www.confere.pt/carreiras.html"/>
+
+  <!-- 2) Aparência do browser -->
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="theme-color" content="#fdfcfb"/>
+
+  <!-- 3) Open Graph / Twitter (URLs absolutas) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Confere">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Carreiras — Confere">
+  <meta property="og:description" content="Junta-te à Confere. Equipas pequenas, mentoria próxima e formação certificada.">
+  <meta property="og:url" content="https://www.confere.pt/carreiras.html">
+  <meta property="og:image" content="https://www.confere.pt/assets/images/hero/hero-1200.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="800">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- 4) JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Confere",
+    "url":"https://www.confere.pt",
+    "logo":"https://www.confere.pt/assets/images/logotipo/light/logo-320.webp",
+    "sameAs":["https://www.linkedin.com/company/confere-silva-sabino-lda"]
+  }
+  </script>
+
+  <!-- 5) Tema antes do CSS -->
+  <script>
+    (function(){
+      var pref=localStorage.getItem("theme-preference");
+      var r=document.documentElement;
+      if(pref==="light"||pref==="dark") r.setAttribute("data-theme",pref);
+      else r.removeAttribute("data-theme");
+    })();
+  </script>
+
+  <!-- 6) Preload hero -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="image"
+        href="assets/images/hero/pages/careers-1200.jpg"
+        imagesrcset="assets/images/hero/pages/careers-800.jpg 800w,
+                     assets/images/hero/pages/careers-1200.jpg 1200w,
+                     assets/images/hero/pages/careers-1600.jpg 1600w"
+        imagesizes="(max-width: 960px) 100vw, 50vw">
+
+  <!-- 7) CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="stylesheet" href="assets/css/pages/careers.css"/>
+</head>
+
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand-logo" href="index.html" aria-label="Confere">
+      <img id="brand-logo" width="320" height="128" alt="Confere"
+           data-light-src="assets/images/logotipo/light/logo-320.webp"
+           data-light-srcset="assets/images/logotipo/light/logo-200.webp 200w, assets/images/logotipo/light/logo-320.webp 320w, assets/images/logotipo/light/logo-440.webp 440w"
+           data-dark-src="assets/images/logotipo/dark/logo-320.webp"
+           data-dark-srcset="assets/images/logotipo/dark/logo-200.webp 200w, assets/images/logotipo/dark/logo-320.webp 320w, assets/images/logotipo/dark/logo-440.webp 440w" />
+    </a>
+    <div class="menu">
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuLinks">☰ <span class="sr-only">Abrir menu</span></button>
+      <nav class="menu-links" id="menuLinks">
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="index.html#equipa">Equipa</a>
+        <a href="carreiras.html" aria-current="page">Carreiras</a>
+        <a href="index.html#contactos">Contactos</a>
+      </nav>
+      <button id="theme-toggle" class="icon-btn theme-toggle" type="button" title="Trocar tema">🖥️</button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" class="hero hero--careers">
+  <div class="container">
+    <div class="grid grid-2">
+      <div>
+        <div class="eyebrow">Trabalhar na Confere</div>
+        <h1>Cresce connosco. Impacto real nos clientes, todos os dias.</h1>
+        <p class="section-lead">Equipas pequenas, mentoria próxima e formação certificada. Acreditamos em processos simples, tecnologia útil e autonomia com responsabilidade.</p>
+
+        <div class="pills">
+          <span class="pill">📍 Moscavide (modelo híbrido)</span>
+          <span class="pill">🎓 Formação & certificações</span>
+          <span class="pill">💬 Mentoria contínua</span>
+          <span class="pill">💻 Ferramentas modernas</span>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#jobs">Ver vagas</a>
+          <a class="btn btn-secondary" href="#candidatura">Candidatura espontânea</a>
+        </div>
+      </div>
+
+      <figure class="hero-media shadow">
+        <picture>
+          <source type="image/webp"
+                  srcset="assets/images/hero/pages/careers-800.webp 800w,
+                          assets/images/hero/pages/careers-1200.webp 1200w,
+                          assets/images/hero/pages/careers-1600.webp 1600w">
+          <img src="assets/images/hero/pages/careers-1200.jpg"
+               srcset="assets/images/hero/pages/careers-800.jpg 800w,
+                       assets/images/hero/pages/careers-1200.jpg 1200w,
+                       assets/images/hero/pages/careers-1600.jpg 1600w"
+               sizes="(max-width: 960px) 100vw, 50vw"
+               alt="Equipa e relatórios financeiros em contexto de trabalho"
+               decoding="async" fetchpriority="high">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</main>
+
+<section aria-labelledby="porque-title">
+  <div class="container">
+    <h2 id="porque-title">Porquê a Confere</h2>
+    <div class="highlights">
+      <article class="highlight">
+        <div class="h-icon">🤝</div>
+        <h3>Proximidade</h3>
+        <p class="section-lead">Relação direta com clientes e equipas curtas. Vês o impacto do teu trabalho.</p>
+      </article>
+      <article class="highlight">
+        <div class="h-icon">🚀</div>
+        <h3>Crescimento</h3>
+        <p class="section-lead">Plano de aprendizagem, certificações e mentoria para evoluíres rápido.</p>
+      </article>
+      <article class="highlight">
+        <div class="h-icon">🛠️</div>
+        <h3>Eficiência</h3>
+        <p class="section-lead">Automatizações e processos simples para te focares no essencial.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="jobs" aria-labelledby="vagas-title">
+  <div class="container">
+    <h2 id="vagas-title">Vagas em aberto</h2>
+    <div id="jobsPage" class="grid grid-2"></div>
+  </div>
+</section>
+
+<section aria-labelledby="beneficios-title">
+  <div class="container">
+    <h2 id="beneficios-title">Benefícios</h2>
+    <div class="benefits">
+      <article class="benefit">
+        <div class="b-ico">🏠</div>
+        <div><h3>Modelo híbrido</h3><p class="section-lead">Equilíbrio entre foco e colaboração.</p></div>
+      </article>
+      <article class="benefit">
+        <div class="b-ico">🎓</div>
+        <div><h3>Formação paga</h3><p class="section-lead">Certificações e workshops contínuos.</p></div>
+      </article>
+      <article class="benefit">
+        <div class="b-ico">💳</div>
+        <div><h3>Subsídios</h3><p class="section-lead">Alimentação e transporte.</p></div>
+      </article>
+      <article class="benefit">
+        <div class="b-ico">🕒</div>
+        <div>
+          <h3>Sexta à tarde livre</h3>
+          <p class="section-lead">Equilíbrio vida-trabalho real.</p>
+        </div>
+      </article>
+      <article class="benefit">
+        <div class="b-ico">🍽️</div>
+        <div>
+          <h3>Almoço de equipa à sexta</h3>
+          <p class="section-lead">Convívio e cultura de proximidade.</p>
+        </div>
+      </article>
+      <article class="benefit">
+        <div class="b-ico">🧠</div>
+        <div>
+          <h3>Know-how 25+ anos</h3>
+          <p class="section-lead">Aprende com quem já viu de tudo.</p>
+        </div>
+      </article>
+      <article class="benefit">
+        <div class="b-ico">📈</div>
+        <div><h3>Plano de evolução</h3><p class="section-lead">Objetivos claros por senioridade.</p></div>
+      </article>
+      <article class="benefit">
+        <div class="b-ico">🙌</div>
+        <div><h3>Ambiente</h3><p class="section-lead">Equipa próxima e colaborativa.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="processo-title">
+  <div class="container">
+    <h2 id="processo-title">Como recrutamos</h2>
+    <div class="process">
+      <div class="step"><h3>Candidatura</h3><p class="section-lead">Envia o teu CV e uma breve motivação.</p></div>
+      <div class="step"><h3>Conversa inicial</h3><p class="section-lead">30 min para nos conhecermos e alinharmos expectativas.</p></div>
+      <div class="step"><h3>Desafio prático</h3><p class="section-lead">Pequeno caso real ou revisão de trabalhos.</p></div>
+      <div class="step"><h3>Proposta</h3><p class="section-lead">Feedback rápido e proposta transparente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="faq-title">
+  <div class="container faq">
+    <h2 id="faq-title">Perguntas frequentes</h2>
+
+    <details>
+      <summary>O modelo é híbrido?</summary>
+      <div class="answer">
+        Sim. Após um período de integração e formação inicial em regime maioritariamente presencial,
+        passas a modelo híbrido combinado com a chefia.
+      </div>
+    </details>
+
+    <details>
+      <summary>Que formação existe?</summary>
+      <div class="answer">
+        Promovemos <strong>formação específica</strong> alinhada com a função (processos, fiscalidade,
+        ferramentas e automações).
+      </div>
+    </details>
+
+    <details>
+      <summary>Têm sexta-feira à tarde livre?</summary>
+      <div class="answer">
+        <p>Sim — <strong>sexta-feira à tarde é livre</strong> após o nosso <em>almoço de equipa</em>. Faz parte do nosso compromisso com o equilíbrio vida-trabalho.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Aceitam perfis júnior?</summary>
+      <div class="answer">
+        Sim, valorizamos base sólida e vontade de aprender. Terás mentoria próxima e plano de evolução.
+      </div>
+    </details>
+
+    <details>
+      <summary>Há estágios?</summary>
+      <div class="answer">
+        Consideramos estágios curriculares e profissionais consoante vagas e período do ano.
+        Envia a tua <a href="#candidatura">candidatura espontânea</a>.
+      </div>
+    </details>
+
+    <details>
+      <summary>Que ferramentas usam?</summary>
+      <div class="answer">
+        <p>Trabalhamos sobretudo com o ecossistema <strong>Cegid</strong> — <strong>ERP Primavera</strong>, <strong>PAA</strong> e módulos de <strong>automação fiscal</strong> — complementado por integrações e automatizações para reduzir tarefas repetitivas e aumentar a qualidade.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Como me posso candidatar?</summary>
+      <div class="answer">
+        Usa o botão <em>Candidatar</em> em cada vaga ou a <a href="#candidatura">candidatura espontânea</a>.
+        Anexa o CV e indica a tua área de interesse.
+      </div>
+    </details>
+
+    <details>
+      <summary>Como tratam os meus dados?</summary>
+      <div class="answer">
+        Usamos os dados apenas para efeitos de recrutamento. Podes pedir atualização ou remoção
+        enviando email para <a href="mailto:info@confere.pt">info@confere.pt</a>.
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<section id="candidatura" aria-labelledby="candidatura-title">
+  <div class="container">
+    <h2 id="candidatura-title" class="mt-15">Candidatura espontânea</h2>
+    <p class="section-lead">A oportunidade certa pode abrir em breve. Candidate-se hoje.</p>
+
+    <form id="spontaneousForm" class="card shadow mt-05">
+      <div class="grid grid-2">
+        <div>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" autocomplete="name" required/>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required/>
+        </div>
+        <div>
+          <label for="telefone">Telefone (opcional)</label>
+          <input id="telefone" name="telefone" type="tel" autocomplete="tel"/>
+        </div>
+        <div>
+          <label for="area">Área de interesse</label>
+          <select id="area" name="area">
+            <option>Contabilidade</option>
+            <option>Recursos Humanos</option>
+            <option>Consultoria</option>
+            <option>Administrativo</option>
+          </select>
+        </div>
+      </div>
+      <div class="mt-05">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Fale-nos brevemente sobre a sua experiência e motivação"></textarea>
+      </div>
+      <p class="section-lead mt-06 mb-0">Após carregar em "Enviar", o seu cliente de email irá abrir com os dados preenchidos. Anexe o seu CV antes de enviar.</p>
+      <div class="actions mt-08">
+        <button type="submit" class="btn btn-primary">Enviar candidatura</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Confere. Todos os direitos reservados.</div>
+    <div class="footer-links">
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="carreiras.html" aria-current="page">Carreiras</a>
+      <a href="index.html#contactos">Contactos</a>
+    </div>
+  </div>
+      <div class="container footer-legal">
+    <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer">Livro de Reclamações</a>
+    <span class="dot">·</span>
+    <a href="https://www.centroarbitragemlisboa.pt/" target="_blank" rel="noopener noreferrer">Centro de Arbitragem de Conflitos de Consumo de Lisboa</a>
+    <span class="dot">·</span>
+    <a href="https://www.linkedin.com/company/confere-silva-sabino-lda" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</footer>
+
+<!-- CTA fixo (mobile) -->
+<div class="apply-cta" id="applyCta">
+  <a class="btn btn-primary" href="#candidatura">Candidatura espontânea</a>
+</div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages/careers.js?v=3"></script>
+</body>
+</html>

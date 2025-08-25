@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Confere — Contabilidade, Recursos Humanos e Consultoria</title>
+    <meta name="description"
+          content="Confere: gabinete de contabilidade, recursos humanos e consultoria para PME. Serviços completos, equipa próxima e foco em eficiência."/>
+
+<meta name="color-scheme" content="light dark"/>
+<meta name="theme-color" content="#fdfcfb">
+<script>
+  (function () {
+    var pref = localStorage.getItem("theme-preference"); // "light" | "dark" | null
+    var root = document.documentElement;
+    if (pref === "light" || pref === "dark") {
+      root.setAttribute("data-theme", pref);
+    } else {
+      root.removeAttribute("data-theme"); // segue o sistema
+    }
+  })();
+</script>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="container nav">
+      <a class="brand-logo" href="#top" aria-label="Confere">
+  <img id="brand-logo"
+       width="320" height="64"
+       alt="Confere"
+       loading="eager" decoding="async"
+       data-light-src="assets/images/logotipo/light/logo-320.webp"
+       data-light-srcset="assets/images/logotipo/light/logo-200.webp 200w, /assets/images/logotipo/light/logo-320.webp 320w, /assets/images/logotipo/light/logo-440.webp 440w"
+       data-dark-src="assets/images/logotipo/dark/logo-320.webp"
+       data-dark-srcset="assets/images/logotipo/dark/logo-200.webp 200w, /assets/images/logotipo/dark/logo-320.webp 320w, /assets/images/logotipo/dark/logo-440.webp 440w"
+  />
+</a>
+        <div class="menu">
+            <button class="menu-btn" id="menuBtn" aria-expanded="false"
+                    aria-controls="menuLinks">☰ <span
+                    class="sr-only">Abrir menu</span></button>
+            <nav class="menu-links" id="menuLinks">
+                <a href="servicos.html">Serviços</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#equipa">Equipa</a>
+                <a href="carreiras.html">Carreiras</a>
+                <a href="#contactos">Contactos</a>
+            </nav>
+                    <button id="theme-toggle"
+                class="icon-btn theme-toggle"
+                type="button"
+                aria-label="Tema"
+                title="Trocar tema">🖥️</button>
+        </div>
+    </div>
+
+</header>
+
+<!-- Hero -->
+<main id="top" class="hero">
+    <div class="container">
+        <div class="grid grid-2">
+            <div>
+                <div class="eyebrow">Gabinete de Contabilidade</div>
+                <h1>Um parceiro próximo para a sua contabilidade e gestão</h1>
+                <p class="lead">
+                    Trabalhamos lado a lado com organizações de todas as áreas,
+                    garantindo uma gestão financeira e de recursos humanos que
+                    inspira confiança e facilita decisões estratégicas.
+                </p>
+
+                <div class="actions">
+                    <a class="btn btn-primary" href="#contactos">Fale
+                        connosco</a>
+                    <a class="btn btn-secondary" href="carreiras.html">Ver vagas</a>
+                </div>
+            </div>
+            <!-- Media hero (imagem) -->
+            <figure class="hero-media shadow">
+                <picture>
+                    <!-- WebP (preferível) -->
+                    <source type="image/webp"
+                            srcset="
+        assets/images/hero/hero-800.webp 800w,
+        assets/images/hero/hero-1200.webp 1200w,
+        assets/images/hero/hero-1600.webp 1600w">
+                    <!-- Fallback JPEG -->
+                    <img
+                            src="assets/images/hero/hero-1200.jpg"
+                            srcset="
+        assets/images/hero/hero-800.jpg 800w,
+        assets/images/hero/hero-1200.jpg 1200w,
+        assets/images/hero/hero-1600.jpg 1600w"
+                            sizes="(max-width: 960px) 100vw, 50vw"
+                            alt="Relatórios financeiros e gráficos em laptop e mesa de trabalho"
+                            decoding="async"
+                            fetchpriority="high">
+                </picture>
+                <figcaption class="sr-only">Trabalho de contabilidade e
+                    consultoria com foco em precisão e eficiência.
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+</main>
+
+<!-- Serviços -->
+<section id="servicos">
+    <div class="container">
+        <h2>Serviços</h2>
+        <p class="section-lead">Soluções completas, adaptadas à fase e à
+            realidade do seu negócio.</p>
+        <div id="servicesContainer"></div>
+    </div>
+</section>
+
+<!-- Sobre / História -->
+<section id="sobre">
+    <div class="container grid grid-2">
+        <div>
+            <h2>Quem somos</h2>
+            <p class="section-lead">
+                Desde 1996 que a Confere apoia empresas e empreendedores na
+                gestão financeira e de pessoas.
+                Acreditamos que a contabilidade não é apenas cumprir obrigações
+                — é uma ferramenta estratégica para tomar melhores decisões e
+                construir negócios sustentáveis.
+            </p>
+            <p class="section-lead">
+                Trabalhamos lado a lado com os nossos clientes para simplificar
+                processos, dar clareza aos números e transformar dados em
+                confiança.
+                Valorizamos a transparência, a responsabilidade e a melhoria
+                contínua.
+            </p>
+
+        </div>
+        <div>
+            <h2>A nossa história</h2>
+            <div class="timeline">
+                <div class="milestone">
+                    <strong>1996</strong> — Nascimento da Confere, com o
+                    objetivo de apoiar PME através de serviços de contabilidade
+                    de proximidade.
+                </div>
+                <div class="milestone">
+                    <strong>2012</strong> — Consolidação do crescimento,
+                    alargando serviços e reforçando a especialização da equipa.
+                </div>
+                <div class="milestone">
+                    <strong>2018</strong> — Viragem para uma contabilidade mais
+                    focada no cliente, com reporting útil e acompanhamento
+                    próximo.
+                </div>
+                <div class="milestone">
+                    <strong>2022</strong> — Aposta em automatizações e processos
+                    digitais para maior eficiência e integração tecnológica.
+                </div>
+                <div class="milestone">
+                    <strong>2025</strong> — Reforço no investimento em talento,
+                    formação contínua e inovação, para preparar o futuro da
+                    contabilidade e consultoria.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Equipa -->
+<section id="equipa">
+    <div class="container">
+        <h2>A nossa equipa</h2>
+        <p class="section-lead">Uma equipa dedicada a apoiar o seu negócio em
+            cada etapa.</p>
+        <div id="teamContainer"></div>
+    </div>
+</section>
+
+<!-- Clientes -->
+<section id="clientes">
+    <div class="container">
+        <h2>Clientes</h2>
+        <p class="section-lead">Estas são algumas das empresas que já confiam na
+            Confere.</p>
+        <div id="clientsContainer"></div>
+    </div>
+</section>
+
+<!-- Carreiras -->
+<section id="carreiras">
+    <div class="container">
+        <h2>Carreiras</h2>
+        <p class="section-lead">Na Confere acreditamos que o sucesso começa
+            pelas pessoas. Contamos com uma equipa que valoriza a colaboração, a
+            confiança e a vontade de aprender todos os dias.</p>
+
+
+        <h3 class="mt-125">Vagas em aberto</h3>
+        <div id="jobsContainer"></div>
+
+    </div>
+</section>
+
+<!-- Contactos -->
+<section id="contactos">
+    <div class="container">
+        <h2>Contactos</h2>
+        <div class="contact-grid">
+            <div class="card shadow">
+                <h3 class="mt-0">Fale connosco</h3>
+                <p class="section-lead">Tem dúvidas ou quer falar connosco?
+                    Estamos aqui para ajudar.</p>
+                <div class="grid grid-2">
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:info@confere.pt">info@confere.pt</a>
+                        </p>
+                    </div>
+                    <div>
+                        <strong>Telefone</strong>
+                        <p><a href="tel:219947530">219 947 530</a></p>
+                    </div>
+                    <div>
+                        <strong>Morada</strong>
+                        <p>Rua Dr. João António Gonçalves Amaral, 6, Loja 2,
+                            1885-096 Moscavide</p>
+                    </div>
+                    <div>
+                        <strong>Horário</strong>
+                        <dl class="business-hours">
+                            <div>
+                                <dt>Segunda–Quinta</dt>
+                                <dd class="ranges">
+                                    <span><time datetime="09:00">09:00</time>–<time
+                                            datetime="13:00">13:00</time></span>
+                                    <span><time datetime="14:00">14:00</time>–<time
+                                            datetime="18:00">18:00</time></span>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Sexta</dt>
+                                <dd class="ranges">
+                                    <span><time datetime="09:00">09:00</time>–<time
+                                            datetime="13:00">13:00</time></span>
+                                </dd>
+                            </div>
+                        </dl>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow">
+                <div class="map-embed" role="region"
+                     aria-label="Mapa da localização">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4216.101449727984!2d-9.110207787722556!3d38.776593253704036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933703e941cdf%3A0xe39b036a4d63830!2sConfere%20-%20Silva%20%26%20Sabino!5e1!3m2!1sen!2spt!4v1755876687861!5m2!1sen!2spt"
+                            style="border:0;" allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-inner">
+        <div>© <span id="year"></span> Confere. Todos os direitos reservados.
+        </div>
+        <div class="footer-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#carreiras">Carreiras</a>
+            <a href="#contactos">Contactos</a>
+        </div>
+    </div>
+      <div class="container footer-legal">
+    <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer">Livro de Reclamações</a>
+    <span class="dot">·</span>
+    <a href="https://www.centroarbitragemlisboa.pt/" target="_blank" rel="noopener noreferrer">Centro de Arbitragem de Conflitos de Consumo de Lisboa</a>
+    <span class="dot">·</span>
+    <a href="https://www.linkedin.com/company/confere-silva-sabino-lda" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/core.js"></script>
+
+</body>
+</html>

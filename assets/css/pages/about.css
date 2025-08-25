@@ -1,0 +1,391 @@
+/* === Página Sobre — estilos refinados ======================= */
+
+/* HERO ------------------------------------------------------- */
+.hero--about{
+  position: relative;
+  padding: clamp(2rem, 6vw, 5.5rem) 0 clamp(1rem, 4vw, 2.5rem);
+}
+.hero--about::before{
+  content:"";
+  position:absolute; inset:-12vh 0 auto;
+  height:52vh; z-index:-1;
+  background:
+    radial-gradient(60% 50% at 12% 12%, color-mix(in lab, var(--brand) 18%, transparent) 0, transparent 60%),
+    radial-gradient(60% 50% at 88% 18%, color-mix(in lab, var(--brand-2) 20%, transparent) 0, transparent 60%),
+    linear-gradient(to bottom, color-mix(in lab, var(--brand) 6%, transparent), transparent 42%);
+}
+.hero--about .section-lead{ max-width: 58ch; }
+.hero--about .pills{ margin-top:.6rem; }
+.hero--about .actions{ margin-top:1rem; }
+
+/* imagem do hero: cheia mas controlada, sem cortar o topo */
+.hero--about .hero-media{
+  align-self: start;
+  overflow: clip;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+.hero--about .hero-media img{
+  display:block; width:100%;
+  height: clamp(240px, 36vw, 460px);
+  object-fit: cover;
+  object-position: top center;
+}
+@media (max-width: 960px){
+  .hero--about::before{ height:44vh; inset:-10vh 0 auto; }
+  .hero--about .hero-media img{ height: clamp(220px, 48vw, 360px); }
+}
+
+/* SEÇÕES / ESPAÇAMENTO -------------------------------------- */
+section + section{ margin-top: clamp(2rem, 5vw, 3rem); }
+.container > h2{ scroll-margin-top: calc(var(--header-h) + 16px); }
+
+/* CARTÕES SECUNDÁRIOS ---------------------------------------- */
+.cards{ display:grid; gap:.9rem; }
+.cards .card{
+  padding: 1rem;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background: var(--card);
+}
+.cards .card h3{ margin:.1rem 0 .4rem; font-size:1rem; }
+
+/* LISTAS ------------------------------------------------------ */
+.ticks, .bullets{ margin:.3rem 0 0; padding-left:1.1rem; }
+.ticks li, .bullets li{ margin:.2rem 0; }
+.bullets li{ color: var(--muted); }
+
+/* DESTAQUES (3 colunas) -------------------------------------- */
+.highlights{
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+@media (max-width:960px){ .highlights{ grid-template-columns:1fr; } }
+.highlight{
+  border-radius:16px; padding:1rem;
+  background:var(--card);
+  border:1px solid color-mix(in lab, var(--brand) 14%, var(--border));
+}
+.highlight .h-icon{
+  width:36px;height:36px;border-radius:10px;
+  display:grid;place-items:center;
+  background: color-mix(in lab, var(--brand) 18%, transparent);
+  margin-bottom:.45rem;
+}
+.highlights .section-lead{ font-size:.95rem; }
+
+/* FERRAMENTAS & MÉTODO --------------------------------------- */
+/* (herda grelha global .grid .card; só pequenos ajustes) */
+
+/* TIMELINE ---------------------------------------------------- */
+.timeline{
+  position:relative; list-style:none;
+  margin:.8rem 0 0; padding:0 0 0 1.6rem;
+}
+.timeline::before{
+  content:""; position:absolute; top:.2rem; bottom:.2rem; left:.45rem;
+  width:2px; background: color-mix(in lab, var(--brand) 30%, var(--border));
+}
+.timeline li{ position:relative; margin:0 0 1rem; }
+
+.t-bullet{
+  position:absolute; left:-.25rem; top:.1rem;
+  width:2.15rem; height:2.15rem; border-radius:999px;
+  display:grid; place-items:center;
+  color:#fff; font-weight:700; font-size:.8rem;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  box-shadow: 0 6px 18px color-mix(in lab, var(--brand) 35%, transparent);
+  border: 2px solid color-mix(in lab, #fff 70%, transparent);
+}
+.t-card{
+  margin-left: 1.8rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: .75rem .9rem;
+}
+.t-card h3{ margin:.05rem 0 .25rem; font-size:1rem; }
+
+@media (max-width:960px){
+  .timeline{ padding-left:0; }
+  .timeline::before{ left:.25rem; }
+  .t-bullet{ left:-.25rem; width:2rem; height:2rem; font-size:.75rem; }
+  .t-card{ margin-left: 1.55rem; }
+}
+
+/* INTERAÇÕES SUAVES ------------------------------------------ */
+.card:hover{ box-shadow:0 10px 26px rgba(2,6,23,.08); transition: box-shadow .2s ease; }
+a.btn, .btn{ outline-offset: 2px; }
+
+/* MISC -------------------------------------------------------- */
+picture img{ border-radius: inherit; }
+.section-lead + .pills{ margin-top:.55rem; }
+
+/* Pills melhoradas */
+.pills{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.55rem .6rem;              /* mais respiro entre chips */
+  margin:.75rem 0 0;
+}
+
+.pill{
+  --chip-br: color-mix(in lab, var(--brand) 28%, var(--border));
+  --chip-bg: color-mix(in lab, var(--brand) 12%, var(--card));
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.42rem .72rem;
+  border-radius:999px;
+  border:1px solid var(--chip-br);
+  background:
+    linear-gradient(180deg, color-mix(in lab, var(--brand-2) 6%, transparent), transparent 65%),
+    var(--chip-bg);
+  font-size:.9rem;
+  line-height:1.1;
+  color:var(--text);
+  box-shadow:0 1px 0 rgba(2,6,23,.06);
+  white-space:nowrap;
+}
+
+.pill::after{
+  /* brilho subtil na aresta */
+  content:"";
+  position:absolute; inset:0;
+  border-radius:inherit; pointer-events:none;
+  border:1px solid color-mix(in lab, #fff 35%, transparent);
+  mix-blend:overlay; opacity:.35;
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .pill{ transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+  .pill:hover{ transform:translateY(-1px); box-shadow:0 6px 18px rgba(2,6,23,.08); }
+}
+.pill:focus-visible{
+  outline:2px solid color-mix(in lab, var(--brand) 60%, transparent);
+  outline-offset:2px;
+}
+
+/* Grelha fluida de benefícios */
+.benefits{
+  display:grid;
+  gap:1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items:stretch;
+}
+
+/* Card de benefício mais rico e compacto */
+.benefit{
+  position:relative;
+  display:flex;
+  align-items:flex-start;
+  gap:.9rem;
+  padding:1rem 1rem;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:0 6px 20px rgba(2,6,23,.04);
+}
+
+.benefit::before{
+  /* véu muito leve com a cor da marca */
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, color-mix(in lab, var(--brand) 6%, transparent), transparent 65%);
+  border-radius:inherit;
+  pointer-events:none;
+  opacity:.7;
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .benefit{ transition: transform .18s ease, box-shadow .18s ease; }
+  .benefit:hover{ transform: translateY(-2px); box-shadow:0 12px 26px rgba(2,6,23,.08); }
+}
+
+/* Ícone do benefício como “token” com gradiente */
+.b-ico{
+  flex:0 0 44px;
+  width:44px; height:44px;
+  border-radius:12px;
+  display:grid; place-items:center;
+  font-size:1.15rem; color:#fff;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  box-shadow:0 8px 22px color-mix(in lab, var(--brand) 35%, transparent);
+  border:1px solid color-mix(in lab, #fff 45%, transparent);
+}
+
+.benefit h3{
+  margin:.1rem 0 .15rem;
+  font-size:1rem; line-height:1.2;
+}
+
+.benefit .section-lead{
+  margin:0;
+  font-size:.95rem;
+  color:var(--muted);
+}
+
+@media (max-width:640px){
+  .b-ico{ width:40px; height:40px; flex-basis:40px; }
+}
+
+
+@media (prefers-color-scheme: dark){
+  .benefit .section-lead{ color: color-mix(in lab, var(--muted) 92%, #fff 8%); }
+}
+
+/* Mais espaço entre a grelha de benefícios e os botões de ação */
+section[aria-labelledby="cultura-title"] .benefits{
+  margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+/* Botões mais afastados do conteúdo anterior e com bom layout responsivo */
+section[aria-labelledby="cultura-title"] .actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem .8rem;
+  justify-content:center;
+  margin-top: clamp(2.25rem, 6vw, 4rem) !important; /* separação extra */
+}
+
+/* Opcional: um separador “hairline” subtil antes dos botões */
+section[aria-labelledby="cultura-title"] .actions::before{
+  content:"";
+  display:block;
+  width:100%;
+  height:1px;
+  background: var(--border);
+  opacity:.6;
+  margin: 0 0 clamp(1rem, 3vw, 1.5rem);
+  border-radius: 999px;
+}
+
+/* Um pouco mais de respiro no final da secção */
+section[aria-labelledby="cultura-title"]{
+  padding-bottom: clamp(1.5rem, 6vw, 4rem);
+}
+
+/* ===== Clientes ===== */
+.clients-wrap { margin-top: clamp(1.25rem, 3vw, 2rem); }
+
+.clients-lead {
+  color: var(--muted);
+  margin: .3rem 0 1rem;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: .75rem;
+}
+
+.client {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: .8rem .9rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: .45rem;
+  min-height: 120px;
+  text-align: center;
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+
+.client:where(a) { text-decoration: none; color: inherit; }
+
+.client:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in lab, var(--brand) 28%, var(--border));
+  box-shadow: 0 10px 20px rgba(2,6,23,.10);
+}
+
+.client-logo {
+  width: 100%;
+  height: 56px;
+  display: grid;
+  place-items: center;
+}
+
+.client-logo img {
+  max-width: 100%;
+  max-height: 56px;
+  object-fit: contain;
+  transition: filter .16s ease;
+}
+
+
+/* Fallback quando não há logo */
+.client-fallback {
+  width: 92px; height: 56px;
+  display: grid; place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, color-mix(in lab, var(--brand) 28%, transparent), color-mix(in lab, var(--brand-2) 22%, transparent));
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.client-name {
+  font-size: .9rem;
+  line-height: 1.2;
+  color: var(--muted);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 960px) {
+  .clients-grid { gap: .6rem; }
+  .client { min-height: 110px; padding: .7rem; }
+  .client-logo, .client-logo img { height: 50px; max-height: 50px; }
+  .client-fallback { width: 84px; height: 50px; }
+}
+
+
+/* === HERO SOBRE — imagem mais alta e alinhada aos botões === */
+
+/* 1) Em desktop, as duas colunas têm a mesma altura */
+.hero--about .grid.grid-2{
+  align-items: stretch;           /* força as colunas a igualarem a altura */
+}
+
+/* 2) O figure passa a esticar e a imagem ocupa 100% da altura disponível */
+.hero--about .hero-media{
+  align-self: stretch;            /* estica para a altura da linha do grid */
+  display: flex;                  /* garante que o conteúdo preenche a altura */
+  overflow: clip;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.hero--about .hero-media picture,
+.hero--about .hero-media img{
+  width: 100%;
+  height: 100%;                   /* << chave: iguala à coluna dos botões */
+  object-fit: cover;
+  object-position: top center;    /* preserva o topo da imagem */
+}
+
+/* 3) Em ecrãs largos, garantimos um mínimo “saudável” de altura */
+@media (min-width: 961px){
+  .hero--about .hero-media{
+    min-height: 420px;            /* ajusta se quiseres um mínimo maior/menor */
+  }
+}
+
+/* 4) Em mobile, volta a um tamanho controlado para não exagerar */
+@media (max-width: 960px){
+  .hero--about .grid.grid-2{
+    align-items: start;           /* grid empilha; não precisamos de equal-height */
+  }
+  .hero--about .hero-media{
+    align-self: start;
+  }
+  .hero--about .hero-media img{
+    height: clamp(220px, 48vw, 380px); /* limite amigável em mobile */
+  }
+}

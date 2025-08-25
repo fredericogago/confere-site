@@ -1,0 +1,397 @@
+/* === Página Serviços — estilos ============================== */
+
+/* HERO ------------------------------------------------------- */
+.hero--services{
+  position: relative;
+  padding: clamp(2rem, 6vw, 5.5rem) 0 clamp(1rem, 4vw, 2.5rem);
+}
+.hero--services::before{
+  content:"";
+  position:absolute; inset:-12vh 0 auto;
+  height:50vh; z-index:-1;
+  background:
+    radial-gradient(60% 50% at 12% 12%, color-mix(in lab, var(--brand) 18%, transparent) 0, transparent 60%),
+    radial-gradient(60% 50% at 88% 18%, color-mix(in lab, var(--brand-2) 20%, transparent) 0, transparent 60%),
+    linear-gradient(to bottom, color-mix(in lab, var(--brand) 6%, transparent), transparent 42%);
+}
+.hero--services .section-lead{ max-width: 58ch; }
+.hero--services .actions{ margin-top:1rem; }
+.hero--services .hero-media{
+  align-self: start;
+  overflow: clip;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+.hero--services .hero-media img{
+  display:block; width:100%;
+  height: clamp(240px, 36vw, 460px);
+  object-fit: cover;
+  object-position: top center;
+}
+@media (max-width: 960px){
+  .hero--services::before{ height:42vh; inset:-10vh 0 auto; }
+  .hero--services .hero-media img{ height: clamp(220px, 48vw, 360px); }
+}
+
+/* PESQUISA --------------------------------------------------- */
+.svc-search{
+  display:flex;
+  flex-direction:column;
+  gap:.6rem;
+  margin-top: .8rem;
+}
+#servicesSearch{
+  width:100%;
+  padding:.75rem .9rem;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+#servicesSearch::placeholder{ color: color-mix(in lab, var(--muted) 85%, #fff 15%); }
+
+.svc-filters{
+  display:flex; flex-wrap:wrap;
+  gap:.45rem .5rem;
+}
+.svc-chip{
+  appearance:none;
+  border:1px solid var(--border);
+  background: var(--card);
+  border-radius:999px;
+  padding:.35rem .65rem;
+  cursor:pointer;
+  font-size:.9rem;
+}
+.svc-chip[aria-pressed="true"]{
+  border-color: color-mix(in lab, var(--brand) 28%, var(--border));
+  background: color-mix(in lab, var(--brand) 12%, var(--card));
+}
+
+/* LISTAGEM --------------------------------------------------- */
+.services-grid{
+  display:grid;
+  gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
+  margin-top: .6rem;
+}
+.card.service{
+  padding:1rem;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background: var(--card);
+  display:flex; flex-direction:column; gap:.5rem;
+}
+.service-icon{
+  width:46px; height:46px;
+  display:grid; place-items:center;
+  border-radius:12px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color:#fff; font-size:1.25rem; font-weight:700;
+  box-shadow:0 10px 24px color-mix(in lab, var(--brand) 35%, transparent);
+  border:1px solid color-mix(in lab, #fff 45%, transparent);
+}
+.card.service h3{ margin:.15rem 0 .25rem; font-size:1.05rem; }
+.card.service .section-lead{ margin:0; font-size:.97rem; }
+
+.facts{ display:flex; flex-wrap:wrap; gap:.35rem .5rem; margin-top:.15rem; }
+.fact{
+  display:inline-flex; align-items:center; gap:.4rem;
+  padding:.3rem .55rem; border-radius:999px;
+  border:1px solid var(--border);
+  font-size:.85rem; background: var(--card);
+}
+.fact .dot{
+  width:7px; height:7px; border-radius:999px;
+  background: color-mix(in lab, var(--brand) 65%, var(--brand-2) 35%);
+}
+
+.bullets{ margin:.2rem 0 0; padding-left:1.1rem; }
+.bullets li{ margin:.2rem 0; color: var(--muted); }
+
+.outcomes{ display:flex; flex-wrap:wrap; gap:.35rem .45rem; }
+.outcome{
+  display:inline-flex; align-items:center;
+  padding:.32rem .55rem; border-radius:10px;
+  background: color-mix(in lab, var(--brand) 10%, var(--card));
+  border:1px solid color-mix(in lab, var(--brand) 28%, var(--border));
+  font-size:.85rem;
+}
+
+.svc-tags{ display:flex; flex-wrap:wrap; gap:.35rem .45rem; }
+.svc-tags .tag{
+  display:inline-flex; align-items:center;
+  padding:.28rem .5rem; border-radius:999px;
+  border:1px solid var(--border);
+  background: var(--card);
+  font-size:.82rem; color: var(--muted);
+}
+
+/* DETALHES --------------------------------------------------- */
+details{ border:1px solid var(--border); border-radius:12px; background: var(--card); }
+details > summary{
+  cursor:pointer; list-style:none; padding:.6rem .75rem; font-weight:600;
+}
+details > summary::-webkit-details-marker{ display:none; }
+details[open] > summary{ border-bottom:1px solid var(--border); }
+
+details > div{ padding:.7rem .85rem; }
+
+.svc-sec-title{
+  margin:.2rem 0 .35rem;
+  font-size:1rem;
+}
+
+/* FAQ dentro do serviço */
+.svc-faq .faq-item{ border:1px dashed var(--border); border-radius:10px; margin:.4rem 0 0; }
+.svc-faq .faq-item > summary{ padding:.55rem .7rem; font-weight:600; }
+.svc-faq .faq-item .answer{ padding:.6rem .75rem; color: var(--muted); }
+
+/* A realçar ao seguir #ancora */
+.job--highlight{
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px color-mix(in lab, var(--ring) 35%, transparent);
+}
+
+/* MÉTODO ----------------------------------------------------- */
+.method-intro{ margin:.2rem 0 1rem; max-width: 58ch; }
+
+.process-steps{
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+@media (max-width: 960px){ .process-steps{ grid-template-columns:1fr; } }
+
+.m-step{
+  border:1px solid var(--border); border-radius:16px; padding:1rem;
+  background: var(--card);
+}
+.m-ico{
+  width:36px; height:36px; border-radius:10px; display:grid; place-items:center;
+  background: color-mix(in lab, var(--brand) 18%, transparent); margin-bottom:.45rem;
+}
+
+/* Divisor entre passos e garantias */
+.sec-divider{
+  display:flex; align-items:center; gap:.6rem;
+  margin: clamp(1.2rem, 4vw, 2rem) 0 clamp(1rem, 3vw, 1.8rem);
+}
+.sec-divider::before, .sec-divider::after{
+  content:""; flex:1; height:1px; background: var(--border);
+}
+.sec-divider > span{
+  font-weight:600; font-size:.95rem;
+  padding:.2rem .6rem; border-radius:999px;
+  border:1px solid var(--border);
+  background: color-mix(in lab, var(--brand) 8%, var(--card));
+}
+
+/* Garantias */
+.value-grid{
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+@media (max-width: 960px){ .value-grid{ grid-template-columns:1fr; } }
+
+.value-card{
+  border:1px solid var(--border); border-radius:16px; padding:1rem; background: var(--card);
+}
+.v-ico{
+  width:36px; height:36px; border-radius:10px; display:grid; place-items:center;
+  background: color-mix(in lab, var(--brand) 18%, transparent); margin-bottom:.45rem;
+}
+
+/* CTA final */
+.method-cta{
+  margin-top: clamp(1.5rem, 5vw, 2.8rem);
+  border:1px solid var(--border); border-radius:16px;
+  padding:1rem; background: var(--card);
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem; flex-wrap:wrap;
+}
+.method-cta .cta-copy h3{ margin:.1rem 0 .25rem; font-size:1.15rem; }
+.method-cta .cta-actions{ display:flex; gap:.6rem; flex-wrap:wrap; }
+
+/* Pequenas melhorias */
+.card.service:hover{ box-shadow:0 12px 26px rgba(2,6,23,.08); transition: box-shadow .2s ease; }
+a.btn, .btn{ outline-offset:2px; }
+
+
+/* === Steps numerados (Como trabalhamos) ===================== */
+.process-steps{
+  counter-reset: step;           /* inicia o contador */
+}
+
+.m-step{
+  position: relative;            /* para posicionar o badge */
+}
+
+/* bolinha numerada no canto superior-esquerdo do cartão */
+.m-step::before{
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  top: -12px;                    /* ligeiramente fora do cartão */
+  left: -12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: .85rem;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  box-shadow: 0 6px 16px color-mix(in lab, var(--brand) 35%, transparent);
+  border: 2px solid color-mix(in lab, #fff 70%, transparent);
+  z-index: 1;
+}
+
+/* ajuste em ecrãs pequenos para não cortar */
+@media (max-width: 960px){
+  .m-step::before{
+    top: -10px;
+    left: -10px;
+    width: 28px;
+    height: 28px;
+    font-size: .8rem;
+  }
+}
+
+/* === Uniformização dos cartões de serviços ================== */
+
+/* Grelha elástica com cartões que esticam por linha */
+.services-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
+}
+
+/* Cartão em coluna (sem forçar altura total) */
+.card.service{
+  display: flex;
+  flex-direction: column;
+  height: auto; /* volta ao fluxo natural */
+}
+
+/* Bloco de ações centrado */
+.card.service .svc-actions{
+  margin-top: .85rem;
+  display: flex;
+  justify-content: center;   /* <— aqui */
+  gap: .6rem;
+  padding-top: .6rem;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, transparent, color-mix(in lab, var(--card) 65%, transparent));
+}
+
+
+/* Botão com largura natural (mantém aspecto “pill”) */
+.card.service .svc-actions .btn{
+  min-width: 10.5rem;
+  justify-content: center;
+}
+
+/* Pequenos ajustes */
+.card.service details{ margin-top: .4rem; }
+.card.service .bullets{ margin-top: .35rem; }
+.card.service .section-lead{ margin-bottom: .25rem; }
+/* Empty state com CTA */
+.empty-state{
+  display: grid;
+  justify-items: center;
+  gap: .6rem;
+  padding: 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  text-align: center;
+}
+
+/* Dica discreta sempre visível */
+.services-hint{
+  margin-top: .9rem;
+  text-align: center;
+}
+.services-hint a{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ================== EMPTY STATE RICO ================== */
+.empty-state--rich{
+  display: grid;
+  place-items: center;
+  gap: .6rem;
+  text-align: center;
+  padding: 1.25rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg,
+      color-mix(in lab, var(--brand) 6%, transparent),
+      transparent 65%),
+    var(--card);
+  box-shadow: 0 10px 26px rgba(2,6,23,.06);
+}
+
+.empty-ico{
+  width: 56px; height: 56px;
+  border-radius: 14px;
+  display: grid; place-items: center;
+  font-size: 1.4rem; color: #fff;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  border: 1px solid color-mix(in lab, #fff 45%, transparent);
+  box-shadow: 0 10px 24px color-mix(in lab, var(--brand) 35%, transparent);
+}
+
+.empty-title{ margin:.2rem 0 0; font-size:1.1rem; line-height:1.2; }
+.empty-sub{ margin:0; max-width: 52ch; }
+
+.empty-actions{
+  margin-top: .4rem;
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ================== CALLOUT SEMPRE VISÍVEL ============= */
+.services-callout{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .7rem .8rem;
+  align-items: center;
+  padding: .85rem 1rem;
+  border: 1px dashed color-mix(in lab, var(--brand) 40%, var(--border));
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, color-mix(in lab, var(--brand) 6%, transparent), transparent 60%),
+    var(--card);
+}
+
+.services-callout .callout-ico{
+  width: 34px; height: 34px; border-radius: 10px;
+  display: grid; place-items: center; color: #fff;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  border: 1px solid color-mix(in lab, #fff 45%, transparent);
+  box-shadow: 0 6px 18px color-mix(in lab, var(--brand) 35%, transparent);
+}
+
+.services-callout p{
+  margin: 0; color: var(--muted);
+}
+
+.services-callout a{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Pequenas melhorias de espaçamento por baixo da grelha */
+#servicesList + .empty-state--rich{ margin-top: 1rem; }
+
