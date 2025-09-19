@@ -1,28 +1,28 @@
 # Empresas/Clientes que confiam na Confere
 clients:
-  - name: "VAZCONSTRÓI, S.A."
-    logo: "assets/images/clients/vazconstroi-logo.jpeg"
-    url: "https://www.vazconstroi.com/pt"
-    industry: "Construção"
-    since: 2019
-
-  - name: "Energy 4 Seasons, LDA"
-    logo: "assets/images/clients/energy4season-logo.png"
-    url: "https://www.energy4seasons.com/"
-    industry: "Energia"
-    since: 2021
-
-  - name: "Empresa Exemplo B"
-
-  - name: "Empresa Exemplo C"
-    url: "https://www.exemplo-c.pt"
-
-  - name: "Empresa Exemplo E"
-    logo: "assets/images/logo.png"
-    url: "https://www.exemplo-d.pt"
-
-  - name: "Empresa Exemplo D"
-  - name: "Empresa Exemplo D"
-  - name: "Empresa Exemplo D"
-  - name: "Empresa Exemplo D"
-  - name: "Empresa Exemplo D"
+#  - name: "VAZCONSTRÓI, S.A."
+#    logo: "assets/images/clients/vazconstroi-logo.jpeg"
+#    url: "https://www.vazconstroi.com/pt"
+#    industry: "Construção"
+#    since: 2019
+#
+#  - name: "Energy 4 Seasons, LDA"
+#    logo: "assets/images/clients/energy4season-logo.png"
+#    url: "https://www.energy4seasons.com/"
+#    industry: "Energia"
+#    since: 2021
+#
+#  - name: "Empresa Exemplo B"
+#
+#  - name: "Empresa Exemplo C"
+#    url: "https://www.exemplo-c.pt"
+#
+#  - name: "Empresa Exemplo E"
+#    logo: "assets/images/logo.png"
+#    url: "https://www.exemplo-d.pt"
+#
+#  - name: "Empresa Exemplo D"
+#  - name: "Empresa Exemplo D"
+#  - name: "Empresa Exemplo D"
+#  - name: "Empresa Exemplo D"
+#  - name: "Empresa Exemplo D"

@@ -3,7 +3,11 @@ jobs:
     location: "Lisboa (Híbrido)"
     area: "Contabilidade"
     seniority: "Pleno"
-    description: "Encerramentos, reconciliações, fiscalidade e reporting mensal a clientes."
+    description: |
+      Procuramos Técnico(a) de Contabilidade para registo e conferência de documentos,
+      preparação de mapas e apoio às rotinas diárias.  
+      O foco é lançamentos e reconciliações, garantindo dados fiéis para o
+      contabilista certificado concluir fechos e obrigações fiscais.
     active: true
     apply_email: "info@confere.pt"
     apply_subject: "Candidatura - Técnico(a) de Contabilidade"
@@ -21,12 +25,14 @@ jobs:
     workplace: "Rua Dr. João António Gonçalves Amaral 6, 1885-096 Moscavide"
     work_schedule: "Dias úteis"
     responsibilities:
-      - Fecho mensal, apuramentos e demonstrações financeiras.
-      - Reconciliações bancárias e de contas correntes.
-      - Obrigações fiscais periódicas (IVA, IRC, retenções).
-      - Reporting e apoio a clientes (PME).
+      - Lançamento e classificação de faturas de compras e vendas.
+      - Registo e conferência de movimentos bancários e de caixa.
+      - Apoio em reconciliações de contas correntes de clientes e fornecedores.
+      - Preparação de mapas de IVA e outros elementos de reporte interno.
+      - Organização e arquivo digital de documentos contabilísticos.
+      - Colaboração com o contabilista certificado na preparação de fechos e obrigações fiscais.
     requirements:
-      - 3+ anos em contabilidade financeira/fiscal.
+      - Formação na área da contabilidade.
       - Domínio de SNC e noções de fiscalidade portuguesa.
       - Excel/Sheets avançado (tabelas dinâmicas, procura).
       - Boa comunicação escrita e oral em PT.
@@ -41,7 +47,6 @@ jobs:
     education: "Licenciatura em Contabilidade, Gestão ou similar"
     languages:
       - "Português — obrigatório"
-      - "Inglês — valorizado"
     perks:
       - "Modelo híbrido após integração"
       - "Sexta-feira à tarde livre"
@@ -51,188 +56,188 @@ jobs:
     datePosted: "2025-01-15"
     # salaryMin: 0                         # opcional (ex.: 1400)
     # salaryMax: 0
-
-  - title: "Técnico(a) de RH (Payroll)"
-    location: "Lisboa (Híbrido)"
-    area: "RH"
-    seniority: "Júnior"
-    description: "Processamento salarial, admissões/cessações e obrigações legais."
-    active: true
-    apply_email: "info@confere.pt"
-    apply_subject: "Candidatura - Técnico(a) de RH (Payroll)"
-    apply_body: |
-      Olá Confere,
-
-      Envio a minha candidatura à vaga Técnico(a) de RH (Payroll). Segue em anexo o meu CV.
-
-      Obrigad@.
-    employment_type: "FULL_TIME"
-    contract: "Sem termo"
-    department: "Recursos Humanos"
-    reports_to: "Responsável de RH"
-    work_model: "Híbrido (Moscavide)"
-    workplace: "Rua Dr. João António Gonçalves Amaral 6, 1885-096 Moscavide"
-    work_schedule: "Dias úteis"
-    responsibilities:
-      - Processamento salarial e emissão de recibos.
-      - Gestão de admissões, cessações e contratos.
-      - Entrega de declarações e obrigações legais (SS/AT).
-      - Apoio a colaboradores e esclarecimento de dúvidas.
-    requirements:
-      - 0–2 anos em payroll/administrativo de RH (estágio conta).
-      - Conhecimento de legislação laboral portuguesa.
-      - Organização e atenção ao detalhe.
-      - Excel/Sheets intermédio.
-    nice_to_have:
-      - Experiência com Cegid Primavera RH/Payroll.
-      - Experiência em multiempresa.
-    tools:
-      - "Cegid Primavera RH/Payroll"
-      - "Excel / Sheets"
-    education: "Formação em RH, Gestão ou similar"
-    languages:
-      - "Português — obrigatório"
-      - "Inglês — valorizado"
-    perks:
-      - "Modelo híbrido após integração"
-      - "Sexta-feira à tarde livre"
-      - "Almoço de equipa à sexta"
-      - "Mentoria e formação específica"
-    datePosted: "2025-01-15"
-
-  - title: "Consultor(a) | Processos & Automação"
-    location: "Remoto"
-    area: "Consultoria"
-    seniority: "Projeto"
-    description: "Mapeamento de processos e implementação de melhorias/integrações."
-    active: true
-    apply_email: "info@confere.pt"
-    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
-    apply_body: |
-      Olá Confere,
-
-      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
-
-      Obrigad@.
-    employment_type: "CONTRACT"
-    contract: "Projeto / prestação de serviços"
-    department: "Consultoria & Operações"
-    reports_to: "Direção"
-    work_model: "Remoto (reuniões pontuais em Lisboa)"
-    workplace: "Remoto"
-    work_schedule: "Compatível com projeto"
-    responsibilities:
-      - Levantamento e mapeamento de processos (As-Is / To-Be).
-      - Integrações entre sistemas (ERP, PAA, BI, bancos, e-invoicing).
-      - Automação de tarefas (RPA/ETL) e documentação.
-      - Formação de equipas e passagem a operação.
-    requirements:
-      - Experiência em melhoria de processos e integrações.
-      - SQL/ETL ou APIs REST (integrações).
-      - Autonomia, comunicação clara e foco em resultados.
-    nice_to_have:
-      - Experiência com Cegid Primavera e PAA.
-      - Power BI / Power Query / Python.
-      - Noções de fiscalidade/contabilidade.
-    tools:
-      - "Cegid Primavera (ERP)"
-      - "Cegid PAA"
-      - "Power BI / Power Query"
-      - "APIs / Webhooks / SQL"
-    education: "Formação em Gestão, SI, Engenharia ou similar"
-    languages:
-      - "Português — obrigatório"
-      - "Inglês — valorizado"
-    perks:
-      - "Flexibilidade de horário"
-      - "Projetos com impacto direto"
-    datePosted: "2025-01-15"
-
-  - title: "Consultor(a) | Processos & Automação 2"
-    location: "Remoto"
-    area: "Consultoria"
-    seniority: "Projeto"
-    description: "Mapeamento de processos e implementação de melhorias/integrações."
-    active: true
-    apply_email: "info@confere.pt"
-    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
-    apply_body: |
-      Olá Confere,
-
-      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
-
-      Obrigad@.
-    employment_type: "CONTRACT"
-    contract: "Projeto / prestação de serviços"
-    department: "Consultoria & Operações"
-    reports_to: "Direção"
-    work_model: "Remoto (reuniões pontuais em Lisboa)"
-    workplace: "Remoto"
-    work_schedule: "Compatível com projeto"
-    responsibilities:
-      - Levantamento e mapeamento de processos (As-Is / To-Be).
-      - Integrações entre sistemas (ERP, PAA, BI, bancos, e-invoicing).
-      - Automação de tarefas (RPA/ETL) e documentação.
-    requirements:
-      - Experiência em melhoria de processos e integrações.
-      - SQL/ETL ou APIs REST.
-    nice_to_have:
-      - Cegid Primavera/PAA; Power BI.
-    tools:
-      - "Cegid Primavera (ERP)"
-      - "Cegid PAA"
-      - "Power BI / Power Query"
-    education: "Gestão / SI / Engenharia"
-    languages: ["Português — obrigatório", "Inglês — valorizado"]
-    perks: ["Flexibilidade de horário", "Projetos com impacto"]
-    datePosted: "2025-01-15"
-
-  - title: "Consultor(a) | Processos & Automação 3"
-    location: "Remoto"
-    area: "Consultoria"
-    seniority: "Projeto"
-    description: "Mapeamento de processos e implementação de melhorias/integrações."
-    active: false
-    apply_email: "info@confere.pt"
-    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
-    apply_body: |
-      Olá Confere,
-
-      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
-
-      Obrigad@.
-    employment_type: "CONTRACT"
-    contract: "Projeto / prestação de serviços"
-    department: "Consultoria & Operações"
-    work_model: "Remoto"
-    responsibilities:
-      - Levantamento e mapeamento de processos (As-Is / To-Be).
-    requirements:
-      - Experiência em melhoria de processos e integrações.
-    tools: ["Cegid Primavera (ERP)", "Cegid PAA", "Power BI"]
-
-  - title: "Consultor(a) | Processos & Automação 4"
-    location: "Remoto"
-    area: "Consultoria"
-    seniority: "Projeto"
-    description: "Mapeamento de processos e implementação de melhorias/integrações."
-    active: true
-    apply_email: "info@confere.pt"
-    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
-    apply_body: |
-      Olá Confere,
-
-      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
-
-      Obrigad@.
-    employment_type: "CONTRACT"
-    contract: "Projeto / prestação de serviços"
-    department: "Consultoria & Operações"
-    work_model: "Remoto"
-    responsibilities:
-      - Integrações entre sistemas e automação de tarefas.
-      - Documentação e passagem a operação.
-    requirements:
-      - Experiência em integrações (APIs, SQL/ETL).
-    tools: ["Cegid Primavera (ERP)", "Cegid PAA", "APIs / SQL"]
-    languages: ["Português — obrigatório"]
+#
+#  - title: "Técnico(a) de RH (Payroll)"
+#    location: "Lisboa (Híbrido)"
+#    area: "RH"
+#    seniority: "Júnior"
+#    description: "Processamento salarial, admissões/cessações e obrigações legais."
+#    active: true
+#    apply_email: "info@confere.pt"
+#    apply_subject: "Candidatura - Técnico(a) de RH (Payroll)"
+#    apply_body: |
+#      Olá Confere,
+#
+#      Envio a minha candidatura à vaga Técnico(a) de RH (Payroll). Segue em anexo o meu CV.
+#
+#      Obrigad@.
+#    employment_type: "FULL_TIME"
+#    contract: "Sem termo"
+#    department: "Recursos Humanos"
+#    reports_to: "Responsável de RH"
+#    work_model: "Híbrido (Moscavide)"
+#    workplace: "Rua Dr. João António Gonçalves Amaral 6, 1885-096 Moscavide"
+#    work_schedule: "Dias úteis"
+#    responsibilities:
+#      - Processamento salarial e emissão de recibos.
+#      - Gestão de admissões, cessações e contratos.
+#      - Entrega de declarações e obrigações legais (SS/AT).
+#      - Apoio a colaboradores e esclarecimento de dúvidas.
+#    requirements:
+#      - 0–2 anos em payroll/administrativo de RH (estágio conta).
+#      - Conhecimento de legislação laboral portuguesa.
+#      - Organização e atenção ao detalhe.
+#      - Excel/Sheets intermédio.
+#    nice_to_have:
+#      - Experiência com Cegid Primavera RH/Payroll.
+#      - Experiência em multiempresa.
+#    tools:
+#      - "Cegid Primavera RH/Payroll"
+#      - "Excel / Sheets"
+#    education: "Formação em RH, Gestão ou similar"
+#    languages:
+#      - "Português — obrigatório"
+#      - "Inglês — valorizado"
+#    perks:
+#      - "Modelo híbrido após integração"
+#      - "Sexta-feira à tarde livre"
+#      - "Almoço de equipa à sexta"
+#      - "Mentoria e formação específica"
+#    datePosted: "2025-01-15"
+#
+#  - title: "Consultor(a) | Processos & Automação"
+#    location: "Remoto"
+#    area: "Consultoria"
+#    seniority: "Projeto"
+#    description: "Mapeamento de processos e implementação de melhorias/integrações."
+#    active: true
+#    apply_email: "info@confere.pt"
+#    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
+#    apply_body: |
+#      Olá Confere,
+#
+#      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
+#
+#      Obrigad@.
+#    employment_type: "CONTRACT"
+#    contract: "Projeto / prestação de serviços"
+#    department: "Consultoria & Operações"
+#    reports_to: "Direção"
+#    work_model: "Remoto (reuniões pontuais em Lisboa)"
+#    workplace: "Remoto"
+#    work_schedule: "Compatível com projeto"
+#    responsibilities:
+#      - Levantamento e mapeamento de processos (As-Is / To-Be).
+#      - Integrações entre sistemas (ERP, PAA, BI, bancos, e-invoicing).
+#      - Automação de tarefas (RPA/ETL) e documentação.
+#      - Formação de equipas e passagem a operação.
+#    requirements:
+#      - Experiência em melhoria de processos e integrações.
+#      - SQL/ETL ou APIs REST (integrações).
+#      - Autonomia, comunicação clara e foco em resultados.
+#    nice_to_have:
+#      - Experiência com Cegid Primavera e PAA.
+#      - Power BI / Power Query / Python.
+#      - Noções de fiscalidade/contabilidade.
+#    tools:
+#      - "Cegid Primavera (ERP)"
+#      - "Cegid PAA"
+#      - "Power BI / Power Query"
+#      - "APIs / Webhooks / SQL"
+#    education: "Formação em Gestão, SI, Engenharia ou similar"
+#    languages:
+#      - "Português — obrigatório"
+#      - "Inglês — valorizado"
+#    perks:
+#      - "Flexibilidade de horário"
+#      - "Projetos com impacto direto"
+#    datePosted: "2025-01-15"
+#
+#  - title: "Consultor(a) | Processos & Automação 2"
+#    location: "Remoto"
+#    area: "Consultoria"
+#    seniority: "Projeto"
+#    description: "Mapeamento de processos e implementação de melhorias/integrações."
+#    active: true
+#    apply_email: "info@confere.pt"
+#    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
+#    apply_body: |
+#      Olá Confere,
+#
+#      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
+#
+#      Obrigad@.
+#    employment_type: "CONTRACT"
+#    contract: "Projeto / prestação de serviços"
+#    department: "Consultoria & Operações"
+#    reports_to: "Direção"
+#    work_model: "Remoto (reuniões pontuais em Lisboa)"
+#    workplace: "Remoto"
+#    work_schedule: "Compatível com projeto"
+#    responsibilities:
+#      - Levantamento e mapeamento de processos (As-Is / To-Be).
+#      - Integrações entre sistemas (ERP, PAA, BI, bancos, e-invoicing).
+#      - Automação de tarefas (RPA/ETL) e documentação.
+#    requirements:
+#      - Experiência em melhoria de processos e integrações.
+#      - SQL/ETL ou APIs REST.
+#    nice_to_have:
+#      - Cegid Primavera/PAA; Power BI.
+#    tools:
+#      - "Cegid Primavera (ERP)"
+#      - "Cegid PAA"
+#      - "Power BI / Power Query"
+#    education: "Gestão / SI / Engenharia"
+#    languages: ["Português — obrigatório", "Inglês — valorizado"]
+#    perks: ["Flexibilidade de horário", "Projetos com impacto"]
+#    datePosted: "2025-01-15"
+#
+#  - title: "Consultor(a) | Processos & Automação 3"
+#    location: "Remoto"
+#    area: "Consultoria"
+#    seniority: "Projeto"
+#    description: "Mapeamento de processos e implementação de melhorias/integrações."
+#    active: false
+#    apply_email: "info@confere.pt"
+#    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
+#    apply_body: |
+#      Olá Confere,
+#
+#      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
+#
+#      Obrigad@.
+#    employment_type: "CONTRACT"
+#    contract: "Projeto / prestação de serviços"
+#    department: "Consultoria & Operações"
+#    work_model: "Remoto"
+#    responsibilities:
+#      - Levantamento e mapeamento de processos (As-Is / To-Be).
+#    requirements:
+#      - Experiência em melhoria de processos e integrações.
+#    tools: ["Cegid Primavera (ERP)", "Cegid PAA", "Power BI"]
+#
+#  - title: "Consultor(a) | Processos & Automação 4"
+#    location: "Remoto"
+#    area: "Consultoria"
+#    seniority: "Projeto"
+#    description: "Mapeamento de processos e implementação de melhorias/integrações."
+#    active: true
+#    apply_email: "info@confere.pt"
+#    apply_subject: "Candidatura - Consultor(a) Processos & Automação"
+#    apply_body: |
+#      Olá Confere,
+#
+#      Envio a minha candidatura à oportunidade de Consultor(a) de Processos & Automação. Segue em anexo o meu CV.
+#
+#      Obrigad@.
+#    employment_type: "CONTRACT"
+#    contract: "Projeto / prestação de serviços"
+#    department: "Consultoria & Operações"
+#    work_model: "Remoto"
+#    responsibilities:
+#      - Integrações entre sistemas e automação de tarefas.
+#      - Documentação e passagem a operação.
+#    requirements:
+#      - Experiência em integrações (APIs, SQL/ETL).
+#    tools: ["Cegid Primavera (ERP)", "Cegid PAA", "APIs / SQL"]
+#    languages: ["Português — obrigatório"]
